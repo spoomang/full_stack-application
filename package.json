@@ -1,0 +1,22 @@
+{
+  "name": "full_stack_application",
+  "version": "1.0.0",
+  "description": "Demo Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spoomang/full_stack-application.git"
+  },
+  "author": "Sandeep Poomangalath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spoomang/full_stack-application/issues"
+  },
+  "homepage": "https://github.com/spoomang/full_stack-application#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
