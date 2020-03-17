@@ -20,7 +20,7 @@ class App extends Component{
                     <div>
                         <Header/>
                         <Route exact path="/"  component={Landing} />
-                        <Route exact path="/api/feature"  component={Feature} />
+                        <Route exact path="/feature"  component={Feature} />
                     </div>
                 </BrowserRouter>
             </div>

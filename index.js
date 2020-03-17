@@ -10,6 +10,7 @@ require('./services/passport');
 mongoose.connect(keys.mongoDbURI);
 
 const authroutes = require('./routes/authroutes');
+const featureroutes = require('./routes/feature');
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 authroutes(app);
+featureroutes(app);
 
 if(process.env.NODE_ENV == 'production') {
     app.use(express.static('client/build'));
