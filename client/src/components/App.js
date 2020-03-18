@@ -3,10 +3,10 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from '../actions';
 
-import Header from "./Header"; 
-const Dashboard = () => <h2>Dashboard</h2>
-const Feature = () => <h2>Feature</h2>
-const Landing = () => <h2>Landing</h2>
+import Header from "./Header";
+import Dashboard from "./Dashboard";
+import Landing from "./Landing";
+import FeedBack from "./Feedback";
 
 class App extends Component{
     componentDidMount() {
@@ -20,7 +20,8 @@ class App extends Component{
                     <div>
                         <Header/>
                         <Route exact path="/"  component={Landing} />
-                        <Route exact path="/feature"  component={Feature} />
+                        <Route exact path="/feedback"  component={Dashboard} />
+                        <Route path="/feedback/new"  component={FeedBack} />
                     </div>
                 </BrowserRouter>
             </div>
