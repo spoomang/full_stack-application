@@ -6,7 +6,7 @@ import * as actions from '../actions';
 import Header from "./Header";
 import Dashboard from "./Dashboard";
 import Landing from "./Landing";
-import FeedBack from "./Feedback";
+import FeedBack from "./feedback/FeedbackNew";
 
 class App extends Component{
     componentDidMount() {
@@ -15,16 +15,14 @@ class App extends Component{
 
     render() {
         return (
-            <div className="container">
                 <BrowserRouter>
-                    <div>
+                    <div className="container">
                         <Header/>
                         <Route exact path="/"  component={Landing} />
                         <Route exact path="/feedback"  component={Dashboard} />
                         <Route path="/feedback/new"  component={FeedBack} />
                     </div>
                 </BrowserRouter>
-            </div>
         );
     }
 }
